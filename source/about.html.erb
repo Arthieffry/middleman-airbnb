@@ -14,7 +14,11 @@ title: Le Wagon - Middleman - About
           <h2><%= user.name %></h2>
           <p>
             <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
-              <i class="fa fa-github"></i> <%= user.github_nickname %>
+              <i class="fa fa-github"></i>
+              <p>
+                <%= user.github_nickname %>
+
+              </p>
             <% end %>
           </p>
         </li>
